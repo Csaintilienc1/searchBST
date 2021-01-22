@@ -1,3 +1,4 @@
+import org.w3c.dom.Node;
 
 public class searchBST{
 
@@ -12,7 +13,20 @@ public class searchBST{
     }
 
 
+              public  int search(node root, int val){
+          int result= -1;
+        if(root==null){
+              return -1;
+                }
 
+        while (root!=null){
+            if(root.val==val){
+                 result= root.val;
+            }
+            
+        }
+        return result;
+       }
 
 }
 
